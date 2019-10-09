@@ -1,0 +1,99 @@
+
+body {
+  background-color: #2B2733;
+  font-family: "Montserrat";
+}
+
+/* Header */
+header {
+  background-color: #46424D;
+}
+
+.intent {
+   color: #FFF;
+   text-transform: uppercase;
+}
+/* Contains New Activity Text */
+main {
+float: left;
+width: 66%;
+}
+
+aside {
+  float: right;
+  width: 33%;
+}
+
+section {
+  background-color: #46424D;
+}
+
+.select {
+  color: #FFF;
+}
+
+.cat-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.btn-contain {
+  border-style: solid;
+  border-color: #FFF;
+  width: 9%;
+  height: 4%;
+  text-align: center;
+
+}
+
+.non-active-btn {
+  height: 25px;
+  width: 25px;
+  justify-content: center;
+}
+
+.active-btn {
+  height: 25px;
+  width: 25px;
+  z-index: 1000;
+  position: absolute;
+  display: none;
+}
+
+.error-symbol {
+  height: 25px;
+  width: 25px;
+}
+
+h3 {
+  color: #FFF;
+}
+
+h2 {
+  color: #CBC9CF;
+}
+
+#accomplish {
+  color: #FFF;
+}
+
+#time {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#minutes {
+  color: #FFF;
+}
+
+#seconds {
+  color: #FFF;
+}
+
+.start-btn {
+  font-size: 100%;
+  display: flex;
+  align-self: flex-end;
+}
