@@ -2,49 +2,59 @@
 body {
   background-color: #2B2733;
   font-family: "Montserrat";
+  margin: 0%;
 }
 
 /* Header */
 header {
   background-color: #46424D;
+  text-align: center;
+  margin: 0%;
+  padding: 1%;
 }
 
 .intent {
    color: #FFF;
    text-transform: uppercase;
+   padding:0%;
+   margin: 0%;
 }
 /* Contains New Activity Text */
 main {
 float: left;
-width: 66%;
+width: 60%;
+padding: 1%
 }
 
 aside {
   float: right;
-  width: 33%;
+  width: 30%;
 }
 
 section {
   background-color: #46424D;
+  padding: 3% 6%;
 }
+
 
 .select {
   color: #FFF;
+  margin-bottom: 3%;s
 }
 
 .cat-btn {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding: 0%;
 }
 
 .btn-contain {
   border-style: solid;
   border-color: #FFF;
-  width: 9%;
+  width: 20%;
   height: 4%;
   text-align: center;
-
 }
 
 .non-active-btn {
@@ -68,10 +78,11 @@ section {
 
 h3 {
   color: #FFF;
+  margin-top: 0%;
 }
 
 h2 {
-  color: #CBC9CF;
+  color: #CBC9CF
 }
 
 #accomplish {
@@ -92,6 +103,9 @@ h2 {
   color: #FFF;
 }
 
+input {
+
+}
 .start-btn {
   font-size: 100%;
   display: flex;
