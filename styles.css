@@ -112,7 +112,16 @@ h2 {
   color: #FFF;
 }
 
-input {
+.line-input {
+  background-color: transparent;
+  outline: none;
+  outline-style: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: solid #FFF 1px;
+  padding: 3px 10px;
+  width: 100%
 
 }
 
