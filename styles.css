@@ -81,8 +81,15 @@ section {
 }
 
 .error-symbol {
-  height: 25px;
-  width: 25px;
+  height: 2%;
+  width: 2%;
+  margin-top: 2%;
+}
+
+.error {
+  display: inline;
+  color: #FFF;
+
 }
 
 h3 {
@@ -124,8 +131,12 @@ h2 {
   width: 100%
 }
 
-.start-btn {
+#start-btn {
   font-size: 100%;
-  display: flex;
-  align-self: flex-end;
+  margin-top: 5%;
+  float: right;
+}
+
+form {
+  overflow: hidden;
 }
