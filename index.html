@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- <meta charset="utf-8"> -->
+    <meta charset="utf-8">
     <link href="styles.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/images/timer.png" />
+    <title>Intention Timer</title>
   </head>
   <body>
     <header>
@@ -14,23 +16,23 @@
       <section>
         <form>
           <label class="select"><h3>Select a category:</h3></label>
-<section class="cat-btn">
-          <div class="btn-contain">
-            <img src="assets/images/study.svg" alt="light bulb" class="non-active-btn" />
-            <img src="assets/images/study-active.svg" alt="light bulb" class="active-btn" />
-            <label for="study" id="study"><h3>Study</h3></label>
-          </div>
-          <div class="btn-contain">
-            <img src="assets/images/meditate.svg" alt="meditation lotus" class="non-active-btn" />
-            <img src="assets/images/meditate-active.svg" alt="meditation lotus" class="active-btn" />
-            <label for="meditate" id="meditate"><h3>Meditate</h3></label>
-          </div>
-          <div class="btn-contain">
-            <img src="assets/images/exercise.svg" alt="running shoe" class="non-active-btn" />
-            <img src="assets/images/exercise-active.svg" alt="running shoe" class="active-btn" />
-            <label for="exercise" id="exercise"><h3>Exercise</h3></label>
-          </div>
-        </section>
+          <section class="cat-btn">
+            <div class="btn-contain">
+              <img src="assets/images/study.svg" alt="light bulb" class="non-active-btn" />
+              <img src="assets/images/study-active.svg" alt="light bulb" class="active-btn" />
+              <label for="study" id="study"><h3>Study</h3></label>
+            </div>
+            <div class="btn-contain">
+              <img src="assets/images/meditate.svg" alt="meditation lotus" class="non-active-btn" />
+              <img src="assets/images/meditate-active.svg" alt="meditation lotus" class="active-btn" />
+              <label for="meditate" id="meditate"><h3>Meditate</h3></label>
+            </div>
+            <div class="btn-contain">
+              <img src="assets/images/exercise.svg" alt="running shoe" class="non-active-btn" />
+              <img src="assets/images/exercise-active.svg" alt="running shoe" class="active-btn" />
+              <label for="exercise" id="exercise"><h3>Exercise</h3></label>
+            </div>
+          </section>
           <div>
             <label id="accomplish">What would you like to accomplish during this time?
             </br>
@@ -44,27 +46,17 @@
             <label id="minutes">Minutes
             </br>
             <input type="number" name="minutes" class="line-input" /></label>
-          <!-- </div> -->
-          <!-- <div> -->
             <label id="seconds">Seconds
             </br>
             <input type="number" name="seconds" class="line-input" /></label>
           </div>
-          <div class="start-btn">
-            <button>Start Activity</button>
-          </div>
+          <button id="start-btn">Start Activity</button>
         </form>
       </section>
     </main>
     <aside>
-      <div>
-        <h2>Past Activites</h2>
-      </div>
-      <div>
-        <p><strong>You haven't logged any activites yet.
-        </br>
-          Complete the form on the left to get started!</strong></p>
-      </div>
+      <h2>Past Activities</h2>
+      <p><strong>You haven't logged any activites yet.</br>Complete the form on the left to get started!</strong></p>
     </aside>
   </body>
 </html>
