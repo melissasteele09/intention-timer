@@ -23,12 +23,21 @@ header {
 main {
 float: left;
 width: 60%;
-padding: 1%
+padding: 1%;
+border-right: solid #46424D;
 }
 
 aside {
   float: right;
   width: 30%;
+  padding: 1%;
+  height: 100%;
+  padding-bottom: 15%;
+}
+
+aside p {
+  color: #CBC9CF;
+  text-align: center;
 }
 
 section {
@@ -115,6 +124,7 @@ h2 {
   width: 100%
 
 }
+
 .start-btn {
   font-size: 100%;
   display: flex;
