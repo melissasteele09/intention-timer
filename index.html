@@ -7,45 +7,50 @@
   </head>
   <body>
     <header>
-      <h1 class="intent">Intention Timer</h1>
+      <h2 class="intent">Intention Timer</h2>
     </header>
     <main>
       <h2>New Activity</h2>
       <section>
         <form>
           <label class="select"><h3>Select a category:</h3></label>
-          <div>
-            <img src="assets/images/study.svg" alt="light bulb" class="non-active-bulb" />
-            <img src="assets/images/study-active.svg" alt="light bulb" class="active-bulb" />
-            <label for="study" class="study"><h3>Study</h3></label>
+<section class="cat-btn">
+          <div class="btn-contain">
+            <img src="assets/images/study.svg" alt="light bulb" class="non-active-btn" />
+            <img src="assets/images/study-active.svg" alt="light bulb" class="active-btn" />
+            <label for="study" id="study"><h3>Study</h3></label>
           </div>
-          <div>
-            <img src="assets/images/meditate.svg" alt="meditation lotus" class="non-active-med" />
-            <img src="assets/images/meditate-active.svg" alt="meditation lotus" class="active-med" />
-            <label for="meditate" class="meditate"><h3>Meditate</h3></label>
+          <div class="btn-contain">
+            <img src="assets/images/meditate.svg" alt="meditation lotus" class="non-active-btn" />
+            <img src="assets/images/meditate-active.svg" alt="meditation lotus" class="active-btn" />
+            <label for="meditate" id="meditate"><h3>Meditate</h3></label>
           </div>
-          <div>
-            <img src="assets/images/exercise.svg" alt="running shoe" class="non-active-shoe" />
-            <img src="assets/images/exercise-active.svg" alt="running shoe" class="active-shoe" />
-            <label for="exercise" class="exercise"><h3>Exercise</h3></label>
+          <div class="btn-contain">
+            <img src="assets/images/exercise.svg" alt="running shoe" class="non-active-btn" />
+            <img src="assets/images/exercise-active.svg" alt="running shoe" class="active-btn" />
+            <label for="exercise" id="exercise"><h3>Exercise</h3></label>
           </div>
+        </section>
           <div>
-            <label class="accomplish">What would you like to accomplish during this time?
+            <label id="accomplish">What would you like to accomplish during this time?
+</br>
             <input type="text" name="accomplish"/></label>
           </div>
           <div>
             <img src="assets/images/warning.svg" alt="error symbol" class="error-symbol" />
             <p class="error"><strong>A description is required.</strong></p>
           </div>
-          <div>
-            <label class="minutes">Minutes
+          <div id="time">
+            <label id="minutes">Minutes
+            </br>
             <input type="number" name="minutes"/></label>
-          </div>
-          <div>
-            <label class="seconds">Seconds
+          <!-- </div> -->
+          <!-- <div> -->
+            <label id="seconds">Seconds
+            </br>
             <input type="number" name="seconds"/></label>
           </div>
-          <div>
+          <div class="start-btn">
             <button>Start Activity</button>
           </div>
         </form>
@@ -57,6 +62,7 @@
       </div>
       <div>
         <p><strong>You haven't logged any activites yet.
+        </br>
           Complete the form on the left to get started!</strong></p>
       </div>
     </aside>
