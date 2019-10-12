@@ -10,7 +10,8 @@ function preventE() {
 
 studyButton.addEventListener("click", function() {
   studyButton.style.borderColor =  "#B3FD78";
-  console.log(studyButton.innerHTML);
+  studyButton.querySelector('#study-pic').src = "assets/images/study-active.svg";
+  studyButton.querySelector('#study-head').style.color = "#B3FD78";
 })
 
 medButton.addEventListener("click", function() {
