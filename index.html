@@ -32,7 +32,7 @@
             </div>
           </section>
           <label id="accomplish">What would you like to accomplish during this time?</br>
-          <input type="text" name="accomplish" class="line-input" /></label>
+          <input type="text" name="accomplish" class="line-input" id="accomplish-text" /></label>
           <div>
             <img src="assets/images/warning.svg" alt="error symbol" class="error-symbol" />
             <p class="error"><strong>A description is required.</strong></p>
@@ -40,12 +40,12 @@
           <div id="time">
             <label id="minutes">Minutes
             </br>
-            <input type="number" name="minutes" class="line-input" onkeypress="return preventE()" /></label>
+            <input type="number" name="minutes" value="5" id="minute-input" class="line-input" onkeypress="return preventE()" /></label>
             <label id="seconds">Seconds
             <br>
-            <input type="number" name="seconds" class="line-input" onkeypress="return preventE()" /></label>
+            <input type="number" name="seconds" value="00" id="second-input" class="line-input" onkeypress="return preventE()" /></label>
           </div>
-            <button id="start-btn">Start Activity</button>
+            <button type="button" id="start-btn">Start Activity</button>
         </form>
       </section>
     </main>

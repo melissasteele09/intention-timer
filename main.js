@@ -1,6 +1,7 @@
-var studyButton = document.querySelector("#study");
-var medButton = document.querySelector("#meditate");
 var exButton = document.querySelector("#exercise");
+var medButton = document.querySelector("#meditate");
+var startButton = document.querySelector("#start-btn");
+var studyButton = document.querySelector("#study");
 
 function preventE() {
   if (event.keyCode === 101) {
@@ -29,8 +30,15 @@ exButton.addEventListener("click", function() {
   exButton.querySelector("#ex-head").style.color = "#FD8078";
 })
 
+startButton.addEventListener("click", function() {
+  var accomplishInputText = document.querySelector("#accomplish-text").value;
+  var minuteInput = document.querySelector("#minute-input").value;
+  var secondInput = document.querySelector("#second-input").value;
+})
+
+
 function buttonColorReset() {
-  studyButton.style.borderColor =  "#FFF";
+  studyButton.style.borderColor = "#FFF";
   studyButton.querySelector("#study-pic").src = "assets/images/study.svg";
   studyButton.querySelector("#study-head").style.color = "#FFF";
   medButton.style.borderColor = "#FFF";
