@@ -5,7 +5,7 @@
     <link href="styles.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400&display=swap" rel="stylesheet">
     <link rel="icon" href="assets/images/timer.png" />
-    <script type="text/javascript" src="./main.js"></script>
+    <script async type="text/javascript" src="./main.js"></script>
     <title>Intention Timer</title>
   </head>
   <body>
@@ -18,20 +18,20 @@
         <form>
           <label class="select"><h3>Select a category:</h3></label>
           <section class="cat-btn">
-            <div class="btn-contain">
+            <div class="btn-contain" id="study">
               <img src="assets/images/study.svg" alt="light bulb" class="non-active-btn" />
               <img src="assets/images/study-active.svg" alt="light bulb" class="active-btn" />
-              <label for="study" id="study"><h3>Study</h3></label>
+              <label for="study"><h3>Study</h3></label>
             </div>
-            <div class="btn-contain">
+            <div class="btn-contain" id="meditate">
               <img src="assets/images/meditate.svg" alt="meditation lotus" class="non-active-btn" />
               <img src="assets/images/meditate-active.svg" alt="meditation lotus" class="active-btn" />
-              <label for="meditate" id="meditate"><h3>Meditate</h3></label>
+              <label for="meditate"><h3>Meditate</h3></label>
             </div>
-            <div class="btn-contain">
+            <div class="btn-contain" id="exercise">
               <img src="assets/images/exercise.svg" alt="running shoe" class="non-active-btn" />
               <img src="assets/images/exercise-active.svg" alt="running shoe" class="active-btn" />
-              <label for="exercise" id="exercise"><h3>Exercise</h3></label>
+              <label for="exercise"><h3>Exercise</h3></label>
             </div>
           </section>
           <label id="accomplish">What would you like to accomplish during this time?</br>
