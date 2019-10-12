@@ -5,6 +5,7 @@
     <link href="styles.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400&display=swap" rel="stylesheet">
     <link rel="icon" href="assets/images/timer.png" />
+    <script type="text/javascript" src="./main.js"></script>
     <title>Intention Timer</title>
   </head>
   <body>
@@ -42,18 +43,18 @@
           <div id="time">
             <label id="minutes">Minutes
             </br>
-            <input type="number" name="minutes" class="line-input" /></label>
+            <input type="number" name="minutes" class="line-input" onkeypress="return preventE()" /></label>
             <label id="seconds">Seconds
             <br>
-            <input type="number" name="seconds" class="line-input" /></label>
-            </div>
+            <input type="number" name="seconds" class="line-input" onkeypress="return preventE()" /></label>
+          </div>
             <button id="start-btn">Start Activity</button>
         </form>
       </section>
     </main>
     <aside>
       <h2>Past Activities</h2>
-      <p><strong>You haven't logged any activites yet.<br>Complete the form on the left to get started!</strong></p>
+      <p><strong>You haven't logged any activities yet.<br>Complete the form on the left to get started!</strong></p>
     </aside>
   </body>
 </html>
