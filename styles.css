@@ -71,20 +71,11 @@ aside p {
   border-radius: 3%;
 }
 
-.non-active-btn {
+.btn {
   height: 25px;
   width: 25px;
   justify-content: center;
   padding-top: 5%;
-}
-
-.active-btn {
-  height: 25px;
-  width: 25px;
-  padding-top: 5%;
-  z-index: 1000;
-  position: absolute;
-  display: none;
 }
 
 .error-symbol {
