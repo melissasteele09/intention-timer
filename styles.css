@@ -111,6 +111,7 @@ h2 {
 
 label {
   font-size: 20px;
+  color: inherit;
 }
 
 #accomplish {
