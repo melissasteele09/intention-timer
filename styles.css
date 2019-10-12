@@ -109,6 +109,10 @@ h2 {
   color: #CBC9CF
 }
 
+label {
+  font-size: 20px;
+}
+
 #accomplish {
   color: #FFF;
   /* margin-top: 20%; */
@@ -145,6 +149,7 @@ h2 {
   color: #FFF;
   width: 100%;
   margin-top: 4%;
+  font-size: 20px;
 }
 
 #start-btn {
