@@ -5,6 +5,10 @@ body {
   margin: 0%;
 }
 
+button {
+  outline: none;
+}
+
 /* Header */
 header {
   background-color: #46424D;
@@ -153,22 +157,22 @@ label {
 
 form {
   overflow: hidden;
-  /* display: none; */
-  /* //dont forget to change this out!!! */
 }
+
 #timer {
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
+  color: #FFF;
 }
 
 #timer-start-btn {
-  border-style: solid;
+  border: 3px solid #FFF;
   border-radius: 100%;
-  border-color: #FFF;
   color: #FFF;
   background: rgba(0, 0, 0, 0.0);
   padding: 15% 12%;
   text-transform: uppercase;
   font-size: 175%;
+  overflow: hidden;
 }
