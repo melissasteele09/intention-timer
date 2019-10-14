@@ -42,9 +42,11 @@ startButton.addEventListener("click", function() {
   var accomplishInputText = document.querySelector("#accomplish-text").value;
   var minuteInput = document.querySelector("#minute-input").value;
   var secondInput = document.querySelector("#second-input").value;
+  var currentText = document.querySelector("#main-title")
   accomplishOutput.innerText = accomplishInputText;
   minuteOutput.innerText = minuteInput;
   secondOutput.innerText = secondInput;
+  currentText.innerText = "Current Activity"
   document.querySelector('form').style.display = "none";
   document.querySelector('#timer').style.display = "flex";
   timerStartButton.style.borderColor = categoryColor;
