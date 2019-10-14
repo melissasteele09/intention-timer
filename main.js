@@ -10,7 +10,7 @@ function preventE() {
 };
 
 studyButton.addEventListener("click", function() {
-  buttonColorReset()
+  buttonColorReset();
   studyButton.style.borderColor =  "#B3FD78";
   studyButton.querySelector("#study-pic").src = "assets/images/study-active.svg";
   studyButton.querySelector("#study-head").style.color = "#B3FD78";
@@ -24,7 +24,7 @@ medButton.addEventListener("click", function() {
 })
 
 exButton.addEventListener("click", function() {
-  buttonColorReset()
+  buttonColorReset();
   exButton.style.borderColor = "#FD8078";
   exButton.querySelector("#shoe-pic").src = "assets/images/exercise-active.svg";
   exButton.querySelector("#ex-head").style.color = "#FD8078";
