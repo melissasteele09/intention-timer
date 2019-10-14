@@ -3,6 +3,7 @@ var medButton = document.querySelector("#meditate");
 var startButton = document.querySelector("#start-btn");
 var studyButton = document.querySelector("#study");
 
+
 function preventE() {
   if (event.keyCode === 101) {
     return false;
@@ -34,7 +35,28 @@ startButton.addEventListener("click", function() {
   var accomplishInputText = document.querySelector("#accomplish-text").value;
   var minuteInput = document.querySelector("#minute-input").value;
   var secondInput = document.querySelector("#second-input").value;
+  var accomplishOutput = document.querySelector("#accomplish-output");
+  var minuteOutput = document.querySelector("#minute-output");
+  var secondOutput = document.querySelector("#second-output");
+  accomplishOutput.innerText = accomplishInputText;
+  minuteOutput.innerText = minuteInput;
+  secondOutput.innerText = secondInput;
 })
+
+function startTimer() {
+  var min = parseInt(minuteInput);
+  var sec = parseInt(secondInput);
+  var totSec = (min * 60) + sec;
+  setInterval(function() {
+    if (totSec === 0) {
+      clearInterval();
+    } else {
+      totSec--;
+      minuteInput = Math.floor(totSec / 60);
+      secondInput = totSec % 60;
+    };
+  }, 10000;
+};
 
 
 function buttonColorReset() {
