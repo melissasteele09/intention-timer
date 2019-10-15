@@ -1,12 +1,12 @@
+var accomplishOutput = document.querySelector("#accomplish-output");
+var categoryColor;
 var exButton = document.querySelector("#exercise");
 var medButton = document.querySelector("#meditate");
-var startButton = document.querySelector("#start-btn");
-var studyButton = document.querySelector("#study");
-var accomplishOutput = document.querySelector("#accomplish-output");
 var minuteOutput = document.querySelector("#minute-output");
 var secondOutput = document.querySelector("#second-output");
+var startButton = document.querySelector("#start-btn");
+var studyButton = document.querySelector("#study");
 var timerStartButton = document.querySelector("#timer-start-btn");
-var categoryColor;
 
 function preventE() {
   if (event.keyCode === 101) {
@@ -44,8 +44,8 @@ startButton.addEventListener("click", function() {
   var secondInput = document.querySelector("#second-input").value;
   var currentText = document.querySelector("#main-title")
   accomplishOutput.innerText = accomplishInputText;
-  minuteOutput.innerText = minuteInput;
-  secondOutput.innerText = secondInput;
+  minuteOutput.innerText = doubleDigit(minuteInput);
+  secondOutput.innerText = doubleDigit(secondInput);
   currentText.innerText = "Current Activity"
   document.querySelector('form').style.display = "none";
   document.querySelector('#timer').style.display = "flex";
@@ -61,17 +61,22 @@ function startTimer() {
   setInterval(function() {
     if (totSec === 0) {
       clearInterval();
+      timerStartButton.innerText = "complete!";
     } else {
       totSec--;
-      minuteOutput.innerText = Math.floor(totSec / 60);
-      secondOutput.innerText = totSec % 60;
+      minuteOutput.innerText = doubleDigit(Math.floor(totSec / 60));
+      secondOutput.innerText = doubleDigit(totSec % 60);
     };
   }, 1000);
 };
 
-// function doubleDigit(num) {
-//
-// }
+function doubleDigit(num) {
+  if (parseInt(num) < 10) {
+    return "0" + parseInt(num)
+  } else {
+    return parseInt(num)
+  };
+}
 
 function buttonColorReset() {
   studyButton.style.borderColor = "#FFF";
