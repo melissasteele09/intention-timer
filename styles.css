@@ -5,6 +5,10 @@ body {
   margin: 0%;
 }
 
+button {
+  outline: none;
+}
+
 /* Header */
 header {
   background-color: #46424D;
@@ -18,6 +22,7 @@ header {
   text-transform: uppercase;
   padding:0%;
   margin: 0%;
+  font-size: 1.8vw;
 }
 
 /* Contains New Activity Text */
@@ -50,7 +55,7 @@ aside p {
 
 .select {
   color: #FFF;
-  margin-bottom: 3%;s
+  margin-bottom: 3%;
 }
 
 .cat-btn {
@@ -84,20 +89,22 @@ aside p {
   margin-top: 2%;
 }
 
-.error {
+#error {
   display: inline;
   color: #EFB7EC;
-  font-size: small;
+  font-size: 1vw;
 }
 
 h3 {
   color: #FFF;
   margin-top: 0%;
   margin-bottom: 4%;
+  font-size: 1.4vw;
 }
 
 h2 {
-  color: #CBC9CF
+  color: #CBC9CF;
+  font-size: 1.8vw;
 }
 
 label {
@@ -107,6 +114,7 @@ label {
 
 #accomplish {
   color: #FFF;
+  font-size: 1.4vw;
 }
 
 #time {
@@ -119,6 +127,7 @@ label {
   color: #FFF;
   margin-top: 8%;
   width: 100%;
+  font-size: 1.4vw;
 }
 
 #seconds {
@@ -126,6 +135,7 @@ label {
   margin-top: 8%;
   width: 100%;
   margin-left: 20%;
+  font-size: 1.4vw;
 }
 
 .line-input {
@@ -140,7 +150,11 @@ label {
   color: #FFF;
   width: 100%;
   margin-top: 4%;
-  font-size: 20px;
+  font-size: 1.4vw;
+}
+
+.card-log {
+  font-size: 1.4vw;
 }
 
 #start-btn {
@@ -149,26 +163,38 @@ label {
   width: 25%;
   float: right;
   border-radius: 6%;
+  font-size: 1vw;
 }
 
 form {
   overflow: hidden;
-  display: none;
-  /* //dont forget to change this out!!! */
 }
+
 #timer {
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
+  color: #FFF;
+}
+
+#accomplish-output {
+  margin-bottom: 0%;
+  font-size: 1.8vw;
+}
+
+#timer-countdown {
+  font-size: 5.5vw;
+  margin: 0% 0% 5%;
 }
 
 #timer-start-btn {
-  border-style: solid;
+  border: 3px solid #FFF;
   border-radius: 100%;
-  border-color: #FFF;
   color: #FFF;
   background: rgba(0, 0, 0, 0.0);
   padding: 15% 12%;
+  margin-bottom: 5%;
   text-transform: uppercase;
-  font-size: 175%;
+  font-size: 2vw;
+  overflow: hidden;
 }
