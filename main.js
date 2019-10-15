@@ -1,12 +1,12 @@
+var accomplishOutput = document.querySelector("#accomplish-output");
+var categoryColor;
 var exButton = document.querySelector("#exercise");
 var medButton = document.querySelector("#meditate");
-var startButton = document.querySelector("#start-btn");
-var studyButton = document.querySelector("#study");
-var accomplishOutput = document.querySelector("#accomplish-output");
 var minuteOutput = document.querySelector("#minute-output");
 var secondOutput = document.querySelector("#second-output");
+var startButton = document.querySelector("#start-btn");
+var studyButton = document.querySelector("#study");
 var timerStartButton = document.querySelector("#timer-start-btn");
-var categoryColor;
 
 function preventE() {
   if (event.keyCode === 101) {
@@ -61,6 +61,7 @@ function startTimer() {
   setInterval(function() {
     if (totSec === 0) {
       clearInterval();
+      timerStartButton.innerText = "complete!";
     } else {
       totSec--;
       minuteOutput.innerText = doubleDigit(Math.floor(totSec / 60));
@@ -70,10 +71,10 @@ function startTimer() {
 };
 
 function doubleDigit(num) {
-  if (num < 10) {
-    return "0" + num
+  if (parseInt(num) < 10) {
+    return "0" + parseInt(num)
   } else {
-    return num
+    return parseInt(num)
   };
 }
 
