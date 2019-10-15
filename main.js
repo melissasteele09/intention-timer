@@ -44,8 +44,8 @@ startButton.addEventListener("click", function() {
   var secondInput = document.querySelector("#second-input").value;
   var currentText = document.querySelector("#main-title")
   accomplishOutput.innerText = accomplishInputText;
-  minuteOutput.innerText = minuteInput;
-  secondOutput.innerText = secondInput;
+  minuteOutput.innerText = doubleDigit(minuteInput);
+  secondOutput.innerText = doubleDigit(secondInput);
   currentText.innerText = "Current Activity"
   document.querySelector('form').style.display = "none";
   document.querySelector('#timer').style.display = "flex";
@@ -63,15 +63,19 @@ function startTimer() {
       clearInterval();
     } else {
       totSec--;
-      minuteOutput.innerText = Math.floor(totSec / 60);
-      secondOutput.innerText = totSec % 60;
+      minuteOutput.innerText = doubleDigit(Math.floor(totSec / 60));
+      secondOutput.innerText = doubleDigit(totSec % 60);
     };
   }, 1000);
 };
 
-// function doubleDigit(num) {
-//
-// }
+function doubleDigit(num) {
+  if (num < 10) {
+    return "0" + num
+  } else {
+    return num
+  };
+}
 
 function buttonColorReset() {
   studyButton.style.borderColor = "#FFF";
