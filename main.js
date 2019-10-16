@@ -58,10 +58,8 @@ startButton.addEventListener("click", function() {
     document.querySelector('.error').style.color = "#EFB7EC";
     document.querySelector('.error-symbol').style.opacity = "1";
     document.querySelector('.line-input').style.borderColor = "#EFB7EC";
-  } else if (!categoryColor) {
-    alert ("Don't Forget to Select a Category");
   } else {
-    alert("Add");
+    alert ("Don't Forget to Select a Category");
   };
 });
 
