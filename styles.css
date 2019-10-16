@@ -219,12 +219,27 @@ form {
 
 .card {
   background-color: #46424D;
-  text-align: left;
   border-radius: 4px;
   box-shadow: 5px 5px 4px 0px #26222D;
   color: #FFF;
+  display: flex;
+  flex-direction: column;
+}
+
+#card-cat {
+  border-top: none;
+  border-right: solid #FFF 3px;
+  border-bottom: none;
+  border-left: none;
+  padding: 0% 25% 0% 4%;
+  margin-right: 10%;
 }
 
 #card-time {
   text-transform: uppercase;
+  margin: 0%;
+}
+
+#card-accomplish {
+  margin: 0% 0% 2%;
 }
