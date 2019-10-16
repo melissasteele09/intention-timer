@@ -208,6 +208,14 @@ form {
   display: none;
 }
 
+#new-activity-btn {
+  padding: 1% 8%;
+  margin: 8% 0% 58% 25%;
+  font-size: 1.3vw;
+  text-transform: uppercase;
+  border-radius: 4px;
+  display: none;
+}
 
 .card {
   background-color: #46424D;

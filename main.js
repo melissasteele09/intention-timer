@@ -118,4 +118,6 @@ function addCard() {
       <p id="card-accomplish">${accomplishOutput.innerText}</p>
      </section>`;
   document.querySelector(".card").style.display = "flex";
+  document.querySelector("#timer").style.display ="none";
+  document.querySelector("#new-activity-btn").style.display ="flex";
 }
