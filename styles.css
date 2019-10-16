@@ -192,11 +192,12 @@ form {
   border-radius: 100%;
   color: #FFF;
   background: rgba(0, 0, 0, 0.0);
-  padding: 15% 12%;
+  padding: 16.8% 0%;
   margin-bottom: 5%;
   text-transform: uppercase;
   font-size: 2vw;
   overflow: hidden;
+  min-width: 40%;
 }
 
 #activity-log-btn {
