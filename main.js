@@ -1,17 +1,17 @@
 var accomplishOutput = document.querySelector("#accomplish-output");
 var categoryColor;
-var minuteInput;
-var secondInput;
 var currentText;
 var exButton = document.querySelector("#exercise");
+var logButton = document.querySelector("#activity-log-btn");
 var medButton = document.querySelector("#meditate");
+var minuteInput;
 var minuteOutput = document.querySelector("#minute-output");
+var newActivityButton = document.querySelector("#new-activity-btn")
+var secondInput;
 var secondOutput = document.querySelector("#second-output");
 var startButton = document.querySelector("#start-btn");
 var studyButton = document.querySelector("#study");
 var timerStartButton = document.querySelector("#timer-start-btn");
-var logButton = document.querySelector("#activity-log-btn");
-var newActivityButton = document.querySelector("#new-activity-btn")
 
 function preventE() {
   if (event.keyCode === 101) {
