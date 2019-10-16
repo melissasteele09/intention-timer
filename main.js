@@ -130,5 +130,5 @@ newActivityButton.addEventListener("click", returnForm)
 function returnForm() {
   currentText.innerText = "New Activity"
   document.querySelector("#new-activity-btn").style.display = "none";
-  document.querySelector("form").style.display = "flex";
+  document.querySelector("form").style.display = "";
 }
