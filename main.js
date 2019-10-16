@@ -45,14 +45,18 @@ startButton.addEventListener("click", function() {
   var accomplishInputText = document.querySelector("#accomplish-text").value;
   minuteInput = document.querySelector("#minute-input").value;
   secondInput = document.querySelector("#second-input").value;
-  var currentText = document.querySelector("#main-title")
-  accomplishOutput.innerText = accomplishInputText;
-  minuteOutput.innerText = doubleDigit(minuteInput);
-  secondOutput.innerText = doubleDigit(secondInput);
-  currentText.innerText = "Current Activity"
-  document.querySelector('form').style.display = "none";
-  document.querySelector('#timer').style.display = "flex";
-  timerStartButton.style.borderColor = categoryColor;
+  if (minuteInput && secondInput && accomplishInputText) {
+    var currentText = document.querySelector("#main-title")
+    accomplishOutput.innerText = accomplishInputText;
+    minuteOutput.innerText = doubleDigit(minuteInput);
+    secondOutput.innerText = doubleDigit(secondInput);
+    currentText.innerText = "Current Activity"
+    document.querySelector('form').style.display = "none";
+    document.querySelector('#timer').style.display = "flex";
+    timerStartButton.style.borderColor = categoryColor;
+  } else {
+    console.log("DID NOT ENTER EVERYTHING")
+  }
 });
 
 timerStartButton.addEventListener("click", startTimer);
