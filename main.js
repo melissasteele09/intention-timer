@@ -1,15 +1,17 @@
 var accomplishOutput = document.querySelector("#accomplish-output");
 var categoryColor;
-var minuteInput;
-var secondInput;
+var currentText;
 var exButton = document.querySelector("#exercise");
+var logButton = document.querySelector("#activity-log-btn");
 var medButton = document.querySelector("#meditate");
+var minuteInput;
 var minuteOutput = document.querySelector("#minute-output");
+var newActivityButton = document.querySelector("#new-activity-btn")
+var secondInput;
 var secondOutput = document.querySelector("#second-output");
 var startButton = document.querySelector("#start-btn");
 var studyButton = document.querySelector("#study");
 var timerStartButton = document.querySelector("#timer-start-btn");
-var logButton = document.querySelector("#activity-log-btn");
 
 function preventE() {
   if (event.keyCode === 101) {
@@ -45,13 +47,13 @@ startButton.addEventListener("click", function() {
   var accomplishInputText = document.querySelector("#accomplish-text").value;
   minuteInput = document.querySelector("#minute-input").value;
   secondInput = document.querySelector("#second-input").value;
-  var currentText = document.querySelector("#main-title")
+  currentText = document.querySelector("#main-title")
   accomplishOutput.innerText = accomplishInputText;
   minuteOutput.innerText = doubleDigit(minuteInput);
   secondOutput.innerText = doubleDigit(secondInput);
   currentText.innerText = "Current Activity"
-  document.querySelector('form').style.display = "none";
-  document.querySelector('#timer').style.display = "flex";
+  document.querySelector("form").style.display = "none";
+  document.querySelector("#timer").style.display = "flex";
   timerStartButton.style.borderColor = categoryColor;
 });
 
@@ -117,5 +119,16 @@ function addCard() {
       <p id="card-time">${minuteInput} min ${secondInput} seconds</p>
       <p id="card-accomplish">${accomplishOutput.innerText}</p>
      </section>`;
+  document.querySelector("#card-cat").style.borderColor = categoryColor;
   document.querySelector(".card").style.display = "flex";
+  document.querySelector("#timer").style.display ="none";
+  document.querySelector("#new-activity-btn").style.display ="flex";
+}
+
+newActivityButton.addEventListener("click", returnForm)
+
+function returnForm() {
+  currentText.innerText = "New Activity"
+  document.querySelector("#new-activity-btn").style.display = "none";
+  document.querySelector("form").style.display = "";
 }
