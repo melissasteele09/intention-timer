@@ -1,15 +1,17 @@
 var accomplishOutput = document.querySelector("#accomplish-output");
 var categoryColor;
-var minuteInput;
-var secondInput;
+var currentText;
 var exButton = document.querySelector("#exercise");
+var logButton = document.querySelector("#activity-log-btn");
 var medButton = document.querySelector("#meditate");
+var minuteInput;
 var minuteOutput = document.querySelector("#minute-output");
+var newActivityButton = document.querySelector("#new-activity-btn")
+var secondInput;
 var secondOutput = document.querySelector("#second-output");
 var startButton = document.querySelector("#start-btn");
 var studyButton = document.querySelector("#study");
 var timerStartButton = document.querySelector("#timer-start-btn");
-var logButton = document.querySelector("#activity-log-btn");
 
 function preventE() {
   if (event.keyCode === 101) {
@@ -125,5 +127,16 @@ function addCard() {
       <p id="card-time">${minuteInput} min ${secondInput} seconds</p>
       <p id="card-accomplish">${accomplishOutput.innerText}</p>
      </section>`;
+  document.querySelector("#card-cat").style.borderColor = categoryColor;
   document.querySelector(".card").style.display = "flex";
+  document.querySelector("#timer").style.display ="none";
+  document.querySelector("#new-activity-btn").style.display ="flex";
+}
+
+newActivityButton.addEventListener("click", returnForm)
+
+function returnForm() {
+  currentText.innerText = "New Activity"
+  document.querySelector("#new-activity-btn").style.display = "none";
+  document.querySelector("form").style.display = "";
 }
