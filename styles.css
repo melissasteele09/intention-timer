@@ -172,6 +172,7 @@ label {
 
 form {
   overflow: hidden;
+  height: 100%;
 }
 
 #timer {
@@ -182,7 +183,7 @@ form {
 }
 
 #accomplish-output {
-  margin-bottom: 0%;
+  margin: 0%;
   font-size: 1.8vw;
 }
 
@@ -235,15 +236,21 @@ form {
   border-right: solid #FFF 3px;
   border-bottom: none;
   border-left: none;
-  padding: 0% 25% 0% 4%;
-  margin-right: 10%;
+  padding: 0% 25% 0% 2%;
+  margin: 2% 2% 0.5% 1%;
 }
 
 #card-time {
   text-transform: uppercase;
   margin: 0%;
+  text-align: left;
+  padding: 0% 25% 0% 2%;
+  margin: 0.5% 2% 0.5% 1%;
 }
 
 #card-accomplish {
   margin: 0% 0% 2%;
+  text-align: left;
+  padding: 0% 25% 0% 2%;
+  margin: 0.5% 2% 2% 1%;
 }
