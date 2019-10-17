@@ -75,9 +75,9 @@ function startTimer() {
   var min = parseInt(minuteOutput.innerText);
   var sec = parseInt(secondOutput.innerText);
   totSec = (min * 60) + sec;
-  setInterval(function() {
+  var countdown = setInterval(function() {
     if (totSec === 0) {
-      clearInterval();
+      clearInterval(countdown);
       timerStartButton.innerText = "complete!";
       logButton.style.display = "inline";
     } else {
@@ -132,8 +132,9 @@ function addCard() {
   document.querySelector(`.card-id-${i}`).style.borderColor = categoryColor;
   document.querySelector(".card").style.display = "";
   document.querySelector("form").reset();
-  timerStartButton.innerText = "";
-  logButton.style.display = "inline";
+  document.querySelector("#timer").style.display = "none";
+  timerStartButton.innerText = "Start";
+  logButton.style.display = "none";
   document.querySelector("#new-activity-btn").style.display ="inline";
 }
 
@@ -143,6 +144,5 @@ function returnForm() {
   currentText.innerText = "New Activity"
   document.querySelector("#new-activity-btn").style.display = "none";
   document.querySelector("form").style.display = "";
-  timerStartButton.innerText = "start!";
   i++;
 }
