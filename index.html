@@ -34,16 +34,16 @@
           <label id="accomplish">What would you like to accomplish during this time?</br>
           <input type="text" name="accomplish" class="line-input" id="accomplish-text" /></label>
           <img src="assets/images/warning.svg" alt="error symbol" class="error-symbol" />
-            <p id="error">A description is required.</p>
+          <p class="error">A description is required.</p>
           <div id="time">
             <label id="minutes">Minutes
-            </br>
-            <input type="number" name="minutes" value="5" id="minute-input" class="line-input" onkeypress="return preventE()" /></label>
+            <br>
+            <input type="number" name="minutes" id="minute-input" class="line-input" onkeypress="return preventE()" /></label>
             <label id="seconds">Seconds
             <br>
-            <input type="number" name="seconds" value="00" id="second-input" class="line-input" onkeypress="return preventE()" /></label>
+            <input type="number" name="seconds" id="second-input" class="line-input" onkeypress="return preventE()" /></label>
           </div>
-            <button type="button" id="start-btn">Start Activity</button>
+          <button type="button" id="start-btn">Start Activity</button>
         </form>
         <button id="new-activity-btn">Create a new activity</button>
         <div id="timer">

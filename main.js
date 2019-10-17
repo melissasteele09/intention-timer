@@ -45,16 +45,24 @@ exButton.addEventListener("click", function() {
 
 startButton.addEventListener("click", function() {
   var accomplishInputText = document.querySelector("#accomplish-text").value;
-  minuteInput = document.querySelector("#minute-input").value;
-  secondInput = document.querySelector("#second-input").value;
-  currentText = document.querySelector("#main-title")
-  accomplishOutput.innerText = accomplishInputText;
-  minuteOutput.innerText = doubleDigit(minuteInput);
-  secondOutput.innerText = doubleDigit(secondInput);
-  currentText.innerText = "Current Activity"
-  document.querySelector("form").style.display = "none";
-  document.querySelector("#timer").style.display = "flex";
-  timerStartButton.style.borderColor = categoryColor;
+  minuteInput = document.querySelector("#minute-input").value || 0;
+  secondInput = document.querySelector("#second-input").value || 0;
+  if (accomplishInputText && categoryColor) {
+    var currentText = document.querySelector("#main-title")
+    accomplishOutput.innerText = accomplishInputText;
+    minuteOutput.innerText = doubleDigit(minuteInput);
+    secondOutput.innerText = doubleDigit(secondInput);
+    currentText.innerText = "Current Activity"
+    document.querySelector('form').style.display = "none";
+    document.querySelector('#timer').style.display = "flex";
+    timerStartButton.style.borderColor = categoryColor;
+  } else if (!accomplishInputText) {
+    document.querySelector('.error').style.color = "#EFB7EC";
+    document.querySelector('.error-symbol').style.opacity = "1";
+    document.querySelector('.line-input').style.borderColor = "#EFB7EC";
+  } else {
+    alert ("Don't Forget to Select a Category");
+  };
 });
 
 timerStartButton.addEventListener("click", startTimer);
