@@ -1,6 +1,8 @@
 var accomplishOutput = document.querySelector("#accomplish-output");
 var categoryColor;
 var currentText;
+var i = 0;
+var totSec;
 var exButton = document.querySelector("#exercise");
 var logButton = document.querySelector("#activity-log-btn");
 var medButton = document.querySelector("#meditate");
@@ -72,12 +74,12 @@ logButton.addEventListener("click", addCard);
 function startTimer() {
   var min = parseInt(minuteOutput.innerText);
   var sec = parseInt(secondOutput.innerText);
-  var totSec = (min * 60) + sec;
+  totSec = (min * 60) + sec;
   setInterval(function() {
     if (totSec === 0) {
       clearInterval();
       timerStartButton.innerText = "complete!";
-      document.querySelector("#activity-log-btn").style.display = "flex";
+      logButton.style.display = "inline";
     } else {
       totSec--;
       minuteOutput.innerText = doubleDigit(Math.floor(totSec / 60));
@@ -123,13 +125,15 @@ function addCard() {
   document.querySelector("#card-log2").style.display = "none";
   aside.innerHTML += `
     <section class="card">
-      <h4 id="card-cat">${category}</h4>
-      <p id="card-time">${minuteInput} min ${secondInput} seconds</p>
-      <p id="card-accomplish">${accomplishOutput.innerText}</p>
-     </section>`;
-  document.querySelector("#card-cat").style.borderColor = categoryColor;
+      <h4 class="card-cat card-id-${i}">${category}</h4>
+      <p class="card-time">${minuteInput} min ${secondInput} seconds</p>
+      <p class="card-accomplish">${accomplishOutput.innerText}</p>
+    </section>`;
+  document.querySelector(`.card-id-${i}`).style.borderColor = categoryColor;
   document.querySelector(".card").style.display = "";
-  document.querySelector("#timer").style.display ="none";
+  document.querySelector("form").reset();
+  timerStartButton.innerText = "";
+  logButton.style.display = "inline";
   document.querySelector("#new-activity-btn").style.display ="inline";
 }
 
@@ -139,4 +143,6 @@ function returnForm() {
   currentText.innerText = "New Activity"
   document.querySelector("#new-activity-btn").style.display = "none";
   document.querySelector("form").style.display = "";
+  timerStartButton.innerText = "start!";
+  i++;
 }

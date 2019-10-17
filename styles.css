@@ -229,9 +229,11 @@ form {
   color: #FFF;
   display: flex;
   flex-direction: column;
+  margin-bottom: 3%;
+  width: 94%;
 }
 
-#card-cat {
+.card-cat {
   border-top: none;
   border-right: solid #FFF 3px;
   border-bottom: none;
@@ -240,7 +242,7 @@ form {
   margin: 2% 2% 0.5% 1%;
 }
 
-#card-time {
+.card-time {
   text-transform: uppercase;
   margin: 0%;
   text-align: left;
@@ -248,7 +250,7 @@ form {
   margin: 0.5% 2% 0.5% 1%;
 }
 
-#card-accomplish {
+.card-accomplish {
   margin: 0% 0% 2%;
   text-align: left;
   padding: 0% 25% 0% 2%;
