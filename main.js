@@ -48,7 +48,7 @@ startButton.addEventListener("click", function() {
   minuteInput = document.querySelector("#minute-input").value || 0;
   secondInput = document.querySelector("#second-input").value || 0;
   if (accomplishInputText && categoryColor) {
-    var currentText = document.querySelector("#main-title")
+    currentText = document.querySelector("#main-title")
     accomplishOutput.innerText = accomplishInputText;
     minuteOutput.innerText = doubleDigit(minuteInput);
     secondOutput.innerText = doubleDigit(secondInput);
@@ -128,9 +128,9 @@ function addCard() {
       <p id="card-accomplish">${accomplishOutput.innerText}</p>
      </section>`;
   document.querySelector("#card-cat").style.borderColor = categoryColor;
-  document.querySelector(".card").style.display = "flex";
+  document.querySelector(".card").style.display = "";
   document.querySelector("#timer").style.display ="none";
-  document.querySelector("#new-activity-btn").style.display ="flex";
+  document.querySelector("#new-activity-btn").style.display ="inline";
 }
 
 newActivityButton.addEventListener("click", returnForm)
